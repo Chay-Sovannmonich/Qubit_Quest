@@ -1,0 +1,57 @@
+{
+  "id": "4-2",
+  "name": "GHZ",
+  "world": 4,
+  "qubits": 3,
+  "start": "000",
+  "target": {
+    "amplitudes": [
+      0.70710678,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.70710678
+    ]
+  },
+  "gates": {
+    "H": 1,
+    "CNOT": 2
+  },
+  "par": 3,
+  "intro": "Make all three qubits agree: 000 or 111.",
+  "hints": [
+    "Start like the Bell Pair.",
+    "Spread the agreement to the third qubit.",
+    "H on 0, CNOT 0 to 1, CNOT 1 to 2."
+  ],
+  "learned": "This is a GHZ state: three qubits entangled together.",
+  "solution": [
+    {
+      "gate": "H",
+      "targets": [
+        0
+      ]
+    },
+    {
+      "gate": "CNOT",
+      "controls": [
+        0
+      ],
+      "targets": [
+        1
+      ]
+    },
+    {
+      "gate": "CNOT",
+      "controls": [
+        1
+      ],
+      "targets": [
+        2
+      ]
+    }
+  ]
+}

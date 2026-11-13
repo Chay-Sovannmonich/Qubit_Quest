@@ -1,0 +1,42 @@
+{
+  "id": "5-1",
+  "name": "Find the Card",
+  "world": 5,
+  "qubits": 2,
+  "start": "00",
+  "target": "10",
+  "oracle": "10",
+  "gates": {
+    "H": 2,
+    "ORACLE": 1,
+    "DIFFUSION": 1
+  },
+  "par": 4,
+  "intro": "One of four cards is marked. Make its bar reach 100%.",
+  "hints": [
+    "First make every card equally likely.",
+    "The oracle marks the card; diffusion boosts it.",
+    "H on both qubits, then ORACLE, then DIFFUSION."
+  ],
+  "learned": "This is Grover's search. With 4 items, one round always finds the marked one.",
+  "solution": [
+    {
+      "gate": "H",
+      "targets": [
+        0
+      ]
+    },
+    {
+      "gate": "H",
+      "targets": [
+        1
+      ]
+    },
+    {
+      "gate": "ORACLE"
+    },
+    {
+      "gate": "DIFFUSION"
+    }
+  ]
+}

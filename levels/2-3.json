@@ -1,0 +1,33 @@
+{
+  "id": "2-3",
+  "name": "Equator",
+  "world": 2,
+  "qubits": 1,
+  "start": "0",
+  "target": {
+    "amplitudes": [
+      0.70710678,
+      0.70710678
+    ]
+  },
+  "gates": {
+    "H": 1,
+    "X": 1
+  },
+  "par": 1,
+  "intro": "Move the arrow onto the equator, pointing at |+>.",
+  "hints": [
+    "The equator is halfway between |0> and |1>.",
+    "X will not help here.",
+    "Use H."
+  ],
+  "learned": "H puts a qubit in an equal superposition. On the sphere, superposition states sit on the equator.",
+  "solution": [
+    {
+      "gate": "H",
+      "targets": [
+        0
+      ]
+    }
+  ]
+}

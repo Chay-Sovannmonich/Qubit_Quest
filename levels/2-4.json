@@ -1,0 +1,38 @@
+{
+  "id": "2-4",
+  "name": "Phase Spin",
+  "world": 2,
+  "qubits": 1,
+  "start": {
+    "amplitudes": [
+      0.70710678,
+      0.70710678
+    ]
+  },
+  "target": {
+    "amplitudes": [
+      0.70710678,
+      -0.70710678
+    ]
+  },
+  "gates": {
+    "H": 2,
+    "Z": 1
+  },
+  "par": 1,
+  "intro": "Spin the arrow from |+> to |->, the other side of the equator.",
+  "hints": [
+    "|+> and |-> differ only in phase.",
+    "Which gate changes phase but not 0 or 1?",
+    "Use Z. H, Z, H would not work here: try it and see where the arrow goes."
+  ],
+  "learned": "Z changes the phase. On the sphere it is a half-turn around the z-axis.",
+  "solution": [
+    {
+      "gate": "Z",
+      "targets": [
+        0
+      ]
+    }
+  ]
+}

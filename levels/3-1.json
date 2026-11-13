@@ -1,0 +1,44 @@
+{
+  "id": "3-1",
+  "name": "Bell Pair",
+  "world": 3,
+  "qubits": 2,
+  "start": "00",
+  "target": {
+    "amplitudes": [
+      0.70710678,
+      0,
+      0,
+      0.70710678
+    ]
+  },
+  "gates": {
+    "H": 1,
+    "CNOT": 1
+  },
+  "par": 2,
+  "intro": "Make the two qubits always agree: both 0 or both 1.",
+  "hints": [
+    "First put qubit 0 in superposition.",
+    "Then let qubit 0 control qubit 1.",
+    "H on qubit 0, then CNOT from 0 to 1."
+  ],
+  "learned": "This is a Bell state, the simplest entangled pair. Each arrow shrinks to the centre: neither qubit has a state of its own.",
+  "solution": [
+    {
+      "gate": "H",
+      "targets": [
+        0
+      ]
+    },
+    {
+      "gate": "CNOT",
+      "controls": [
+        0
+      ],
+      "targets": [
+        1
+      ]
+    }
+  ]
+}

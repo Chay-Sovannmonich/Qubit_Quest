@@ -1,0 +1,27 @@
+{
+  "id": "1-1",
+  "name": "First Flip",
+  "world": 1,
+  "qubits": 1,
+  "start": "0",
+  "target": "1",
+  "gates": {
+    "X": 1
+  },
+  "par": 1,
+  "intro": "Turn the arrow from the top of the sphere to the bottom.",
+  "hints": [
+    "The top is |0>, the bottom is |1>.",
+    "You need a gate that flips 0 and 1.",
+    "Use X."
+  ],
+  "learned": "X flips |0> and |1>, like a NOT gate. On the sphere it is a half-turn around the x-axis.",
+  "solution": [
+    {
+      "gate": "X",
+      "targets": [
+        0
+      ]
+    }
+  ]
+}
